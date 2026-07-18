@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UPSA SRC Bash 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                UPSA <span>SRC BASH</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#event">Event</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#developer">Developer</a></li>
+            </ul>
+
+            <a href="#tickets" class="nav-button">
+                Get Ticket
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                THE BIGGEST STUDENT PARTY IS HERE
+            </p>
+
+            <h1>
+                UPSA <span>SRC BASH</span> 2026
+            </h1>
+
+            <p class="hero-text">
+                Get ready for an unforgettable night of music, dance,
+                entertainment and unforgettable memories.
+            </p>
+
+            <div class="event-details">
+
+                <div>
+                    <strong>📅 DATE</strong>
+                    <p>15th August,2026</p>
+                </div>
+
+                <div>
+                    <strong>📍 VENUE</strong>
+                    <p>UPSA Campus</p>
+                </div>
+
+                <div>
+                    <strong>🎵 EXPERIENCE</strong>
+                    <p>Music • Dance • Fun</p>
+                </div>
+
+            </div>
+
+            <a href="#tickets" class="main-button">
+                🎟️ Buy Your Ticket
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Event Information -->
+    <section id="event" class="event-section">
+
+        <div class="section-title">
+            <p>WHAT TO EXPECT</p>
+
+            <h2>
+                One Night. <span>Unlimited Fun.</span>
+            </h2>
+        </div>
+
+        <div class="event-card">
+
+    <img src="images/fun3.jpg" alt="Students dancing and having fun">
+
+    <h3>Dance & Fun</h3>
+
+    <p>
+        Come with your friends and enjoy a night full of
+        dancing, laughter and entertainment.
+    </p>
+
+</div>
+            <div class="event-card">
+
+    <img src="images/riri.jpg" alt="Students dancing and having fun">
+
+    <h3>Dance & Fun</h3>
+
+    <p>
+        Enjoy now, regret later.
+    </p>
+
+</div>
+
+            <div class="event-card">
+
+    <img src="images/fun.jpg" alt="Students enjoying an event">
+
+    <h3>Unforgettable Night</h3>
+
+    <p>
+        Create memories that you will remember long after
+        the event is over.
+    </p>
+
+</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Ticket Section -->
+    <section id="tickets" class="ticket-section">
+
+        <div class="section-title">
+
+            <p>SECURE YOUR ENTRY</p>
+
+            <h2>
+                Get Your <span>Ticket</span>
+            </h2>
+
+            <p>
+                Choose your ticket type and reserve your place at
+                the UPSA SRC Bash 2026.
+            </p>
+
+        </div>
+
+
+        <div class="ticket-container">
+
+            <!-- Ticket Prices -->
+            <div class="ticket-prices">
+
+                <h3>Ticket Prices</h3>
+
+                <div class="price-card">
+                    <h4>Regular</h4>
+                    <p class="price">GH₵50</p>
+                    <p>Standard event entry</p>
+                </div>
+
+                <div class="price-card">
+                    <h4>VIP</h4>
+                    <p class="price">GH₵100</p>
+                    <p>VIP access and special benefits</p>
+                </div>
+
+                <div class="price-card">
+                    <h4>VVIP</h4>
+                    <p class="price">GH₵200</p>
+                    <p>Premium access and exclusive benefits</p>
+                </div>
+
+            </div>
+
+
+            <!-- Ticket Form -->
+            <div class="ticket-form-container">
+
+                <h3>Buy Your Ticket</h3>
+
+                <form id="ticketForm">
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+
+
+                    <label for="ticketType">
+                        Select Ticket Type
+                    </label>
+
+                    <select id="ticketType" required>
+
+                        <option value="">
+                            Choose a ticket
+                        </option>
+
+                        <option value="50">
+                            Regular - GH₵50
+                        </option>
+
+                        <option value="100">
+                            VIP - GH₵100
+                        </option>
+
+                        <option value="200">
+                            VVIP - GH₵200
+                        </option>
+
+                    </select>
+
+
+                    <label for="quantity">
+                        Number of Tickets
+                    </label>
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        min="1"
+                        value="1"
+                        required
+                    >
+
+
+                    <div class="total-box">
+
+                        Total Amount:
+
+                        <strong id="totalAmount">
+                            GH₵0
+                        </strong>
+
+                    </div>
+
+
+                    <button type="submit">
+                        Buy Ticket
+                    </button>
+
+                </form>
+
+
+                <!-- Message appears here -->
+                <div id="ticketMessage"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+
+        <div class="section-title">
+
+            <p>GET IN TOUCH</p>
+
+            <h2>
+                Contact <span>Us</span>
+            </h2>
+
+        </div>
+
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Have Questions?</h3>
+
+                <p>
+                    Contact the UPSA SRC Bash team for more information
+                    about tickets and the event.
+                </p>
+
+                <p>📞 020 147 0601</p>
+
+                <p>📧 srcbash2026@gmail.com</p>
+
+                <p>📍 University of Professional Studies, Accra</p>
+
+            </div>
+
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Developer Profile -->
+    <section id="developer" class="developer-section">
+
+        <div class="developer-card">
+
+            <div class="developer-image">
+
+                <img
+                    src="images/rb.jpeg"
+                    alt="Roberta Boye - Website Developer"
+                >
+
+            </div>
+
+
+            <div class="developer-info">
+
+                <p>MEET THE DEVELOPER</p>
+
+                <h2>
+                    Roberta <span>Boye</span>
+                </h2>
+
+                <h3>Student Developer</h3>
+
+                <p>
+                    This website was designed and developed by Roberta Boye,
+                    a student developer from the University of Professional
+                    Studies, Accra.
+                </p>
+
+                <p>
+                    I created this website to provide an attractive and
+                    interactive platform for promoting the UPSA SRC Bash 2026
+                    and helping students reserve their event tickets.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>
+            UPSA SRC BASH 2026
+        </h3>
+
+        <p>
+            Music • Dance • Entertainment • Memories
+        </p>
+
+        <p>
+            © 2026 UPSA SRC Bash. Designed by Roberta Boye.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
